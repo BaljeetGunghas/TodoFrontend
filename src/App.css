@@ -1,0 +1,178 @@
+.App {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: #f6fbfe;
+}
+
+.listMain {
+  background-color: rgb(255, 255, 255);
+  width: 30%;
+  height: 60%;
+  padding: 2rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  border-radius: 10px;
+}
+
+
+.listMain .List_item_Length {
+  margin: 0%;
+  width: 100%;
+  text-align: right;
+  color: gray;
+}
+
+.listMain .List_item_Length span {
+  color: #282c34;
+  font-weight: 600;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-height: 100%;
+  overflow-y: scroll;
+}
+
+.list::-webkit-scrollbar {
+  display: none;
+}
+
+
+.list .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color: rgb(233, 229, 229);
+  padding: 0 10px;
+}
+
+.list .main-Active {
+  background-color: #d0e9ee;
+}
+
+h2 {
+  text-align: left;
+  padding: 10px;
+  text-transform: capitalize;
+  width: 100%;
+  margin: 0;
+  height: auto;
+  font-size: 15px;
+}
+
+.btnsec {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btnsec input {
+  padding: 0.5rem;
+  outline: none;
+  border-right: none;
+  border: 1px solid gainsboro;
+}
+
+button {
+  width: auto;
+  font-size: 30px;
+  padding: 0px;
+  border-left: none;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  outline: none;
+  border: 1px solid gainsboro;
+}
+
+.edit, .del {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: rgb(0, 255, 30);
+  cursor: pointer;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+
+.del {
+  color: rgb(255, 0, 17);
+}
+
+.edit:hover, .del:hover {
+  transform: scale(0.9);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 990px) and (min-width: 416px) {
+  .listMain {
+    width: 80%;
+  }
+}
+
+
+
+@media screen and (max-width: 415px) {
+  .listMain {
+    width: 70%;
+  }
+}
